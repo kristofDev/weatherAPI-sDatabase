@@ -1,0 +1,20 @@
+CREATE TABLE podatki(
+    id_podatek int NOT NULL AUTO_INCREMENT,
+    id_lokacija int NOT NULL,
+
+    current_cas datetime NOT NULL,
+    forecast varchar(10) NOT NULL,
+
+    prediction_time datetime NOT NULL,
+    weatherstate varchar(255) NOT NULL,
+    temperature float NOT NULL,
+    humidity int(101) NOT NULL,
+    pressure float NOT NULL,
+    clouds float NOT NULL,
+    visibility float NOT NULL,
+    windspeed float NOT NULL,
+    winddeg float NOT NULL,
+    vir varchar(200) NOT NULL,
+
+    PRIMARY KEY(id_podatek)
+)

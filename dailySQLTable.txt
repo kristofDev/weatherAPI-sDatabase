@@ -1,0 +1,25 @@
+CREATE TABLE daily(
+    id_podatek int NOT NULL AUTO_INCREMENT,
+    id_lokacija int NOT NULL,
+
+    current_cas datetime NOT NULL,
+    forecast_time datetime NOT NULL,
+    weatherstate varchar(255) NOT NULL,
+
+    temperature_day float,
+    temperature_night float,
+    temperature_eve float,
+    temperature_morn float,
+    temperature_min float NOT NULL,
+    temperature_max float NOT NULL,
+    temperature_average float,
+
+    humidity int(101) NOT NULL,
+    pressure float,
+    clouds float,
+    windspeed float,
+    winddeg float,
+    vir varchar(200) NOT NULL,
+
+    PRIMARY KEY(id_podatek)
+)
